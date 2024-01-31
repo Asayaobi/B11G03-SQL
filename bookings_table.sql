@@ -4,5 +4,5 @@ CREATE TABLE bookings (
 	house_id INT REFERENCES houses(house_id) NOT NULL,
 	check_in_date DATE NOT NULL,
 	check_out_date DATE NOT NULL,
-	total_price FLOAT NOT NULL
+	total_price INT NOT NULL
 )
