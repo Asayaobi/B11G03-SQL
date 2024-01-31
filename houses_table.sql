@@ -1,8 +1,7 @@
--- Query to create houses table
+-- Query to create the houses table
 CREATE TABLE houses (
 	house_id SERIAL PRIMARY KEY,
-	city VARCHAR(50) NOT NULL,
-	country VARCHAR(50) NOT NULL,
+	location VARCHAR(100) NOT NULL,
 	bedrooms INT NOT NULL,
 	bathrooms  INT NOT NULL,
 	price_per_night INT  NOT NULL,
