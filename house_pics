@@ -2,5 +2,5 @@
 CREATE TABLE house_pics(
 	house_pic_id serial PRIMARY KEY,
 	house_id INT REFERENCES houses(house_id) NOT NULL,
-	URL VARCHAR(255) NOT NULL
+	url VARCHAR(255) NOT NULL
 );
