@@ -20,7 +20,7 @@ VALUES (
 
 SELECT bookings.*, houses.location, houses.bathrooms, houses.bedrooms
 FROM 
-	bookings
+	bookings 
 LEFT JOIN 
 	houses ON bookings.house_id = houses.house_id
 WHERE 
