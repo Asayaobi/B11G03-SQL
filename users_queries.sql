@@ -30,3 +30,14 @@ SELECT
 	password
 FROM
 	users
+
+--Query to Update Profile
+UPDATE 
+	users
+SET
+	profile_pic = 'http://randomuser.me/api/portraits/men/81.jpg',
+	first_name = 'John',
+	last_name = 'Lopez',
+	email = 'john.lopez@gmail.com'
+WHERE
+	user_id = 1
