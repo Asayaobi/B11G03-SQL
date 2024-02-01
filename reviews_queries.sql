@@ -38,7 +38,7 @@ SELECT
 	reviews.review_text
 FROM
 	users
-LEFT JOIN 
+INNER JOIN 
 	reviews ON reviews.reviewer_id = users.user_id
 WHERE
 	reviews.house_id = 1
