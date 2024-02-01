@@ -53,3 +53,12 @@ UPDATE houses
 		 price_per_night = price_per_night *1.1,
 		 description = 'NICE'
 	WHERE house_id = 1;
+
+-- QUERIES TO DELETE HOUSE
+-- Note: not deleting the booking related to houses. We will manage that later with API
+DELETE FROM reviews
+WHERE house_id = 1;
+DELETE FROM house_pics
+WHERE house_id = 1;
+DELETE FROM houses
+WHERE house_id = 1;
