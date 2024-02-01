@@ -30,6 +30,8 @@ SELECT
 	password
 FROM
 	users
+WHERE
+    user_id = 1
 
 --Query to Update Profile
 UPDATE 
