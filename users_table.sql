@@ -22,3 +22,12 @@ VALUES
 	'password',
 	'https://randomuser.me/api/portraits/men/68.jpg'
 	)
+
+--Query to read users profile
+SELECT 
+	profile_pic, 
+	first_name, 
+	last_name, 
+	email
+FROM 
+	users
