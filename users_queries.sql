@@ -23,3 +23,10 @@ FROM
 	users
 WHERE
     user_id = 1
+
+--Query to read users login
+SELECT 
+	email,
+	password
+FROM
+	users
