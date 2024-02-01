@@ -1,4 +1,4 @@
--- Queries to create a house
+-- QUERIES TO CREATE HOUSE
 -- Next query creates a house in house table
 
 INSERT INTO houses (
@@ -24,3 +24,5 @@ INSERT INTO house_pics (
 VALUES (
 	1,
 	'photo1.png');
+
+-- QUERIES TO READ HOUSE (SINGLE PAGE) 
