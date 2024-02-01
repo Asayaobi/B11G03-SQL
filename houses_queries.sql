@@ -12,7 +12,7 @@ VALUES (
 	'Koh Phangan, Thailand',
 	3,
 	1,
-	19.99,
+	20,
 	'lorem ipsum lorem ipsum',
 	1);
 
