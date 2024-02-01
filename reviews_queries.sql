@@ -30,15 +30,15 @@ FROM
 
 --Read the reviews
 SELECT
-	users.profile_pic,
 	reviews.review_date,
-	users.first_name,
-	users.last_name,
 	reviews.rating,
-	reviews.review_text
+	reviews.review_text,
+	users.profile_pic,
+	users.first_name,
+	users.last_name
 FROM
-	users
+	reviews
 LEFT JOIN 
-	reviews ON reviews.reviewer_id = users.user_id
+	users ON reviews.reviewer_id = users.user_id
 WHERE
 	reviews.house_id = 1
