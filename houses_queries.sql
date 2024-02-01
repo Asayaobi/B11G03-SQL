@@ -53,3 +53,31 @@ DELETE FROM house_pics
 WHERE house_id = 1;
 DELETE FROM houses
 WHERE house_id = 1;
+
+--QUERIES TO READ ALL HOUSES (LIST)
+-- Get ALL Houses
+
+SELECT 
+	house_id, location, bathrooms, bedrooms, price_per_night
+FROM 
+	houses
+	
+-- Get one picture from each house
+
+SELECT 
+	house_id,
+	url
+FROM 
+	house_pics
+WHERE
+	house_id = 1;
+
+-- Get information from reviews for each house
+
+SELECT 
+	AVG(reviews.rating)::NUMERIC(10,2), 
+	COUNT(reviews.review_id)
+FROM 
+	reviews
+WHERE
+	house_id = 1;
