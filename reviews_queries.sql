@@ -37,8 +37,8 @@ SELECT
 	users.first_name,
 	users.last_name
 FROM
-	reviews
-LEFT JOIN 
-	users ON reviews.reviewer_id = users.user_id
+	users
+INNER JOIN 
+	reviews ON reviews.reviewer_id = users.user_id
 WHERE
 	reviews.house_id = 1
