@@ -16,15 +16,6 @@ VALUES (
 	'lorem ipsum lorem ipsum',
 	1);
 
--- Next query creates the related pics in house_pics table
-
-INSERT INTO house_pics (
-	house_id, 
-	url)
-VALUES (
-	1,
-	'photo1.png');
-
 -- QUERIES TO READ HOUSE (SINGLE PAGE) 
 -- Query to get house, user and pics
 
