@@ -27,6 +27,8 @@ SELECT
 	AVG(reviews.rating)
 FROM
 	reviews
+WHERE
+	house_id = 1
 
 --Read the reviews
 SELECT
