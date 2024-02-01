@@ -44,3 +44,12 @@ FROM
 INNER JOIN users ON reviews.reviewer_id = users.user_id;
 WHERE
 	houses.house_id = 1;
+
+-- Query to update houses
+UPDATE houses
+	SET location = 'Bali',
+		 bedrooms = 4,
+		 bathrooms = 1,
+		 price_per_night = price_per_night *1.1,
+		 description = 'NICE'
+	WHERE house_id = 1;
