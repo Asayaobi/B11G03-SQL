@@ -26,3 +26,21 @@ VALUES (
 	'photo1.png');
 
 -- QUERIES TO READ HOUSE (SINGLE PAGE) 
+-- Query to get house, user and pics
+
+SELECT houses.*, users.first_name, users.last_name, users.profile_pic, house_pics.url 
+FROM
+	houses
+LEFT JOIN users ON houses.host_id = users.user_id
+LEFT JOIN house_pics ON houses.house_id = house_pics.house_id
+WHERE
+	houses.house_id = 1;
+	
+	
+-- Query to get the reviews
+SELECT reviews.*, users.first_name, users.last_name, users.profile_pic
+FROM 
+	reviews
+INNER JOIN users ON reviews.reviewer_id = users.user_id;
+WHERE
+	houses.house_id = 1;
