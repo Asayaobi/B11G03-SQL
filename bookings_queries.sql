@@ -1,3 +1,4 @@
+--QUERIES TO CREATE BOOKING
 INSERT INTO bookings (
 	booking_id,
 	guest_id,
