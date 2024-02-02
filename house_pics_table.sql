@@ -8,5 +8,5 @@ CREATE TABLE house_pics(
 --Query to update house pictures
 UPDATE house_pics
 	SET url = 'https://randomuser.me/api/portraits/women/0.jpg'
-	WHERE house_pic_id = 66
+	WHERE house_pic_id = 66 
 	
