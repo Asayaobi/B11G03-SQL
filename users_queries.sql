@@ -1,4 +1,5 @@
---Query to create users register
+-- Query to insert 1 row in the 'users' table
+
 INSERT INTO users (
 	first_name, 
 	last_name,
@@ -11,9 +12,10 @@ VALUES
 	'john.smith@mail.com',
 	'password',
 	'https://randomuser.me/api/portraits/men/68.jpg'
-	)
+);
 
---Query to read users profile
+-- Query to read 1 row from the 'users' table (profile)
+
 SELECT 
 	profile_pic, 
 	first_name, 
@@ -22,18 +24,20 @@ SELECT
 FROM 
 	users
 WHERE
-    user_id = 1
+	user_id = 1;
 
---Query to read users login
+-- Query to read 1 row from the 'users' table (login)
+
 SELECT 
 	email,
 	password
 FROM
 	users
 WHERE
-    user_id = 1
+	email = 'john.smith@mail.com' AND password = 'password'
 
---Query to Update Profile
+-- Query to update 1 row in the 'users' table
+
 UPDATE 
 	users
 SET

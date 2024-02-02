@@ -1,4 +1,5 @@
--- Query to create the reviews table
+-- Query to create the 'reviews' table
+
 CREATE TABLE reviews (
 	review_id SERIAL PRIMARY KEY,
 	house_id INT REFERENCES houses(house_id) NOT NULL,

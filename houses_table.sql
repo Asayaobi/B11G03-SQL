@@ -1,4 +1,5 @@
--- Query to create the houses table
+-- Query to create the 'houses' table
+
 CREATE TABLE houses (
 	house_id SERIAL PRIMARY KEY,
 	location VARCHAR(100) NOT NULL,

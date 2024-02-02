@@ -1,5 +1,6 @@
---Query to create review
-INSERT INTO reviews(
+-- Insert a row in the 'reviews' table
+
+INSERT INTO reviews (
 	house_id,
 	reviewer_id,
 	review_date,
@@ -11,26 +12,11 @@ VALUES
 	1,
 	'2024-02-01 10:00:00',
 	5,
-	'Great place to stay')
+	'Great place to stay'
+);
 
---Query to read reviews
---Total reviews
-SELECT 
-	COUNT(review_id)
-FROM 
-	reviews
-WHERE 
-	house_id = 1
+-- Read many rows from the 'reviews' table
 
---Average rating
-SELECT
-	AVG(reviews.rating)
-FROM
-	reviews
-WHERE
-	house_id = 1
-
---Read the reviews
 SELECT
 	reviews.review_date,
 	reviews.rating,
@@ -39,8 +25,27 @@ SELECT
 	users.first_name,
 	users.last_name
 FROM
+	reviews
+INNER JOIN
 	users
-INNER JOIN 
-	reviews ON reviews.reviewer_id = users.user_id
+	ON reviews.reviewer_id = users.user_id
 WHERE
-	reviews.house_id = 1
+	reviews.house_id = 1;
+
+-- Count the number of reviews for 1 house
+
+SELECT 
+	COUNT(review_id)
+FROM
+	reviews
+WHERE
+	house_id = 1;
+
+-- Calculate the average rating for 1 house based on its reviews
+
+SELECT
+	AVG(reviews.rating)
+FROM
+	reviews
+WHERE
+	house_id = 1;
